@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LITLI</title>
+    <link rel="stylesheet" href="e-comerce.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <h1 class="title">LITLI</h1>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>Category</a></li>
+        <li><a>About Us</a></li>
+        <li><a>Contact Us</a></li>
+        <li onclick="showcart() "><a><i class="fa-solid fa-cart-shopping"></i><span>0</span></a></li>
+        
+      </ul>
+      
+      <div class="icons" onclick="show()">
+        <i class="fa-solid fa-bars" style="padding: 30px;"></i>
+        <h onclick="showcart() "><a><i class="fa-solid fa-cart-shopping"></i><span>0</span></a></h>
+      </div>
+    </div>
+
+    
+    <div class="side-nav" id="sidenav">
+    
+      <i class="fa-solid fa-xmark"  onclick="cancel()"></i>
+     
+      
+      
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>Category</a></li>
+        <li><a>About Us</a></li>
+        <li><a>Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="add-to-cart-side-nav">
+       <i class="fa-solid fa-xmark"  onclick="cancelcart()"></i>
+      <div class="addcartside">
+      <img src="products/autumn.png">
+      <section class="cart-section">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0.00</p>
+    </section>
+      </div>
+    </div>
+    <div class="icon">
+      <img src="Star 1.png" alt="star logo" class="star" />
+    </div>
+    <div classs="caption">
+      <h1 class="heading">SPRIKLES</h1>
+      <h1 class="heading">CRAFTED</h1>
+    </div>
+
+    <!-- Description section -->
+    <div class="para">
+      <p class="text">
+        Elevate your essence with Luxurios long-lasting perfumes crafted to
+        captivate hearts and awakens memories.
+      </p>
+
+      <!-- Button to see more products -->
+    </div>
+    <div class="button2">
+      <button class="btn1">See more</button>
+    </div>
+
+    <!-- Popular title section -->
+    <div class="poptitle">
+      <h1 class="head">Most Popular Products</h1>
+    </div>
+    <div class="popproducts2">
+     <div class="product2" >
+          <img src="products/perfume.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2>$450</h2>
+          <button class="btn">Add+</button>
+          </div>
+
+     </div>
+      <div class="product2" >
+          <img src="products/perfume1.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2>$450</h2>
+          <button class="btn">Add+</button>
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/perfume2.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2>$450</h2>
+          <button class="btn">Add+</button>
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/perfume3.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2>$450</h2>
+          <button class="btn">Add+</button>
+          </div>
+
+      </div>
+      
+     <div class="product2" >
+          <img src="products/img1.jpg" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2>$450</h2>
+          <button class="btn">Add+</button>
+          </div>
+
+     </div>
+      <div class="product2" >
+          <img src="products/img2.jpg" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2>$450</h2>
+          <button class="btn">Add+</button>
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/img3.jpg" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2>$450</h2>
+          <button class="btn">Add+</button>
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/img5.jpg" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2>$450</h2>
+          <button class="btn">Add+</button>
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/img4.jpg" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2>$450</h2>
+          <button class="btn">Add+</button>
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/img5.jpg" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2>$450</h2>
+          <button class="btn">Add+</button>
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/img6.jpg" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2>$450</h2>
+          <button class="btn">Add+</button>
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/perfume3.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2>$450</h2>
+          <button class="btn">Add+</button>
+          </div>
+
+      </div>
+      </div>
+      
+      
+      
+      
+
+
+    
+
+    <!-- Product images in a scrolling train -->
+    <!-- <div class="popproduct">
+      <div class="scrolltrain">
+        <div class="scrollbar">
+
+        <div class="product2" >
+          <img src="products/perfume.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <h2>$450</h2>
+          <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="product2">
+          <img src="products/perfume1.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <h2>$450</h2>
+          <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="product2">
+          <img src="products/perfume2.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <h2>$450</h2>
+          <div class="button">
+      <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+        </div>
+        </div>
+        <div class="product2">
+          <img src="products/perfume3.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <h2>$450</h2>
+          
+      <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+    
+        </div>
+        <div class="product2">
+          <img src="products/perfume4.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <h2>$450</h2>
+          <div class="button">
+      <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+        </div>
+
+        repeated images for scrolling effect
+
+        <div class="product2">
+          <img src="products/perfume.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <h2>$450</h2>
+          <div class="button">
+      <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+        </div>
+        <div class="product2">
+          <img src="products/perfume1.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <h2>$450</h2>
+         <div class="button">
+      <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+        </div>
+        <div class="product2">
+          <img src="products/perfume2.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <h2>$450</h2>
+          <div class="button">
+      <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+        </div>
+        <div class="product2">
+          <img src="products/perfume3.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <h2>$450</h2>
+          <div class="button">
+      <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+        </div>
+        <div class="product2">
+          <img src="products/perfume4.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <h2>$450</h2>
+          <div class="button">
+      <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+        </div>
+
+        <div class="product2">
+          <img src="products/perfume.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <h2>$450</h2>
+          <div class="button">
+      <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+        </div>
+        <div class="product2">
+          <img src="products/perfume1.png.png" alt="product2" />
+          <h1>Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <h2>$450</h2>
+          <div class="button">
+      <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+        </div>
+
+        </div>
+        </div>
+      </div>
+    </div> -->
+
+   
+
+    <h1 class="cat-head">Categories</h1>
+
+    <div class="category">
+      <div class="cat">
+        <img src="products/summer.png" alt="product2" />
+        <h1>Spring</h1>
+        <p>Awaken your senses with soft
+ florals and fresh new beginnings</p>
+      </div>
+      <div class="cat">
+        <img src="products/spring.png" alt="product2" />
+        <h1>Summer</h1>
+        <p>Awaken your senses with soft
+ florals and fresh new beginnings</p>
+      </div>
+      <div class="cat">
+        <img src="products/autumn.png" alt="product2" />
+        <h1>Autumn</h1>
+        <p>Awaken your senses with soft
+ florals and fresh new beginnings</p>
+      </div>
+      <div class="cat">
+        <img src="products/winter (2).png" alt="product2" />
+        <h1>Winter</h1>
+        <p>Awaken your senses with soft
+ florals and fresh new beginnings</p>
+      </div>
+      </div>
+
+
+      </div>
+      <div class="reach">
+        <div class="reach-out-bar">
+          <div class="login-content">
+          <h1>Reach Out Us</h1>
+          <p>Connecting for excellence</p>
+          </div>
+          <div class="surname">
+          <input placeholder="name" type="text" id="one">
+          <input placeholder="Surename" type="text" id="two">
+          </div>
+          <div class="email">
+          <input placeholder="email" type="email" id="three">
+          </div>
+          <div class="email">
+          <input placeholder="Description" type="text" id="four">
+          </div>
+          <div class="email">
+          <button>Send</button>
+          </div>
+          
+
+        </div>
+      </div>
+
+<hr style="margin: 50px; ">
+
+
+
+
+    
+     <div class="footer">
+      <div class = titlecontent>
+      <h3>LITLI</h3>
+      <p>Elevate your essence with Luxurios long-lasting perfumes crafted to
+        captivate hearts and awakens memories.
+
+      </p>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      </div>
+      <div class=" quick-links">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+
+
+    </div>
+    <div class="contact">
+      <h3>Help</h3>
+      <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div class="contact">
+      <h3>Contact</h3>
+      <ul>
+          <li><i class="fa-solid fa-envelope"></i><a href="#">litlipvtlmt@gmail.com</a></li>
+          <li><i class="fa-solid fa-phone"></i><a href="#">044-54261253</a></li>
+          <li><i class="fa-solid fa-location-dot"></i><a href="#">2nd ganapathy nagar street</a></li>
+          
+        </ul>
+    </div>
+      </div>
+      <div class="footer-mobile" style="text-align: center;">
+      <p> &copy; 2025 Perfume Shop. All rights reserved.</p>
+
+      </div>
+      <hr style="margin: 50px; ">
+      
+    <script src="e-commerce.js"></script>
+  </body>
+</html>
