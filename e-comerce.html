@@ -32,17 +32,18 @@
     <div class="nav">
       <h1 class="title">LITLI</h1>
       <ul>
-        <li><a>Home</a></li>
-        <li><a>Category</a></li>
-        <li><a>About Us</a></li>
-        <li><a>Contact Us</a></li>
-        <li onclick="showcart() "><a><i class="fa-solid fa-cart-shopping"></i><span>0</span></a></li>
+        <li><a href="e-comerce.html">Home</a></li>
+        <li><a href="#category">Category</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
+        <li><a href="#aboutus">About us </a></li>
+        
+        <li onclick="showcart() "><a><i class="fa-solid fa-cart-shopping"></i><span  class="span">0</span></a></li>
         
       </ul>
       
-      <div class="icons" onclick="show()">
-        <i class="fa-solid fa-bars" style="padding: 30px;"></i>
-        <h onclick="showcart() "><a><i class="fa-solid fa-cart-shopping"></i><span>0</span></a></h>
+      <div class="icons" >
+        <i class="fa-solid fa-bars" style="padding: 30px;" onclick="show()"></i>
+        <h1 onclick="showcart() "><a><i class="fa-solid fa-cart-shopping"></i><span>0</span></a></h1>
       </div>
     </div>
 
@@ -61,15 +62,14 @@
       </ul>
     </div>
     <div class="add-to-cart-side-nav">
-       <i class="fa-solid fa-xmark"  onclick="cancelcart()"></i>
-      <div class="addcartside">
-      <img src="products/autumn.png">
-      <section class="cart-section">
-        <h2>Your Cart</h2>
-        <ul id="cart-items"></ul>
-        <p id="cart-total">Total: $0.00</p>
-    </section>
+      <i class="fa-solid fa-xmark"  onclick="cancelcart()"></i>
+      <div class="cart-tit-bar">
+       <h2 id="cart-title">CART ITEMS</h2>
+        <hr/>
+       </div>
+       <div class="ITEMS">
       </div>
+      <div></div>
     </div>
     <div class="icon">
       <img src="star.png" alt="star logo" class="star" />
@@ -88,93 +88,109 @@
 
       <!-- Button to see more products -->
     </div>
-    <div class="button2">
+    <!-- <div class="button2">
       <button class="btn1">See more</button>
-    </div>
+    </div> -->
 
     <!-- Popular title section -->
     <div class="poptitle">
       <h1 class="head">Most Popular Products</h1>
     </div>
-    <div class="popproducts2">
+    
+    
+    <div class="popproducts2" id="products-container">
      <div class="product2" >
           <img src="products/perfume.png.png" alt="product2" />
-          <h1>Ethereal whisper</h1>
+          <h1 class="productname">Ethereal whisper</h1>
           <h4>250 ML</h4>
           <div class="rate">
-          <h2>$450</h2>
-          <button class="btn">Add+</button>
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+
           </div>
 
      </div>
       <div class="product2" >
           <img src="products/perfume1.png.png" alt="product2" />
-          <h1>Ethereal whisper</h1>
+          <h1 class="productname">winter whisper</h1>
           <h4>250 ML</h4>
           <div class="rate">
-          <h2>$450</h2>
-          <button class="btn">Add+</button>
+         <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+
           </div>
 
       </div>
       <div class="product2" >
           <img src="products/perfume2.png.png" alt="product2" />
-          <h1>Ethereal whisper</h1>
+          <h1 class="productname">summer whisper</h1>
           <h4>250 ML</h4>
+          
           <div class="rate">
-          <h2>$450</h2>
-          <button class="btn">Add+</button>
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+          
           </div>
 
       </div>
       <div class="product2" >
           <img src="products/perfume3.png.png" alt="product2" />
-          <h1>Ethereal whisper</h1>
+          <h1 class="productname">hot whisper</h1>
           <h4>250 ML</h4>
           <div class="rate">
-          <h2>$450</h2>
-          <button class="btn">Add+</button>
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
           </div>
 
       </div>
       
      <div class="product2" >
           <img src="products/img1.jpg" alt="product2" />
-          <h1>Ethereal whisper</h1>
+          <h1 class="productname">coat whisper</h1>
           <h4>250 ML</h4>
           <div class="rate">
-          <h2>$450</h2>
-          <button class="btn">Add+</button>
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+          
           </div>
+          
 
      </div>
       <div class="product2" >
           <img src="products/img2.jpg" alt="product2" />
-          <h1>Ethereal whisper</h1>
+          <h1 class="productname">damn whisper</h1>
           <h4>250 ML</h4>
           <div class="rate">
-          <h2>$450</h2>
-          <button class="btn">Add+</button>
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
           </div>
 
       </div>
       <div class="product2" >
           <img src="products/img4.jpg" alt="product2" />
-          <h1>Ethereal whisper</h1>
+          <h1 class="productname">weather whisper</h1>
           <h4>250 ML</h4>
           <div class="rate">
-          <h2>$450</h2>
-          <button class="btn">Add+</button>
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
           </div>
 
       </div>
       <div class="product2" >
           <img src="products/img4.jpg" alt="product2" />
-          <h1>Ethereal whisper</h1>
+          <h1 class="productname">spring whisper</h1>
           <h4>250 ML</h4>
           <div class="rate">
-          <h2>$450</h2>
-          <button class="btn">Add+</button>
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
           </div>
 
       </div>
@@ -310,39 +326,43 @@
     </div> -->
 
    
-
+<div id="category">
     <h1 class="cat-head">Categories</h1>
 
-    <div class="category">
+    <div class="category" ><a href="spring.html">
       <div class="cat">
         <img src="products/summer.png" alt="product2" />
         <h1>Spring</h1>
         <p>Awaken your senses with soft
  florals and fresh new beginnings</p>
+ </a>
       </div>
-      <div class="cat">
+      <div class="cat"><a href="summer.html">
         <img src="products/spring.png" alt="product2" />
         <h1>Summer</h1>
         <p>Awaken your senses with soft
  florals and fresh new beginnings</p>
+ </a>
       </div>
-      <div class="cat">
+      <div class="cat"><a href="autumn.html">
         <img src="products/autumn.png" alt="product2" />
         <h1>Autumn</h1>
         <p>Awaken your senses with soft
  florals and fresh new beginnings</p>
+ </a>
       </div>
-      <div class="cat">
+      <div class="cat"><a href="winter.html">
         <img src="products/winter (2).png" alt="product2" />
         <h1>Winter</h1>
         <p>Awaken your senses with soft
  florals and fresh new beginnings</p>
+ </a>
       </div>
       </div>
 
 
       </div>
-      <div class="reach">
+      <div class="reach" id="contactus">
         <div class="reach-out-bar">
           <div class="login-content">
           <h1>Reach Out Us</h1>
@@ -372,7 +392,7 @@
 
 
     
-     <div class="footer">
+     <div class="footer" id="aboutus">
       <div class = titlecontent>
       <h3>LITLI</h3>
       <p>Elevate your essence with Luxurios long-lasting perfumes crafted to
