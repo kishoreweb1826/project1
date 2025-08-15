@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LITLI</title>
+    <link rel="stylesheet" href="e-comerce.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <style>
+        .head{
+            margin-top: 6%;
+        }
+    </style>
+    <div class="nav">
+      <h1 class="title">LITLI</h1>
+      <ul>
+        <li><a href="e-comerce.html">Home</a></li>
+        <li><a href="#category">Category</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
+        <li><a href="#aboutus">About us </a></li>
+        
+        <li onclick="showcart() "><a><i class="fa-solid fa-cart-shopping"></i><span  class="span">0</span></a></li>
+        
+      </ul>
+      
+      <div class="icons" >
+        <i class="fa-solid fa-bars" style="padding: 30px;" onclick="show()"></i>
+        <h1 onclick="showcart() "><a><i class="fa-solid fa-cart-shopping"></i><span>0</span></a></h1>
+      </div>
+    </div>
+
+    
+    <div class="side-nav" id="sidenav">
+    
+      <i class="fa-solid fa-xmark"  onclick="cancel()"></i>
+     
+      
+      
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>Category</a></li>
+        <li><a>About Us</a></li>
+        <li><a>Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="add-to-cart-side-nav">
+      <i class="fa-solid fa-xmark"  onclick="cancelcart()"></i>
+      <div class="cart-tit-bar">
+       <h2 id="cart-title">CART ITEMS</h2>
+        <hr/>
+       </div>
+       <div class="ITEMS">
+      </div>
+      <div></div>
+    </div>
+ 
+    <div class="poptitle">
+
+      <h1 class="head"><i class="fa-solid fa-sun"></i>Summer Editions</h1>
+    </div>
+    
+    
+    <div class="popproducts2" id="products-container">
+     <div class="product2" >
+          <img src="products/perfume.png.png" alt="product2" />
+          <h1 class="productname">Ethereal whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+
+          </div>
+
+     </div>
+      <div class="product2" >
+          <img src="products/perfume1.png.png" alt="product2" />
+          <h1 class="productname">winter whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+         <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/perfume2.png.png" alt="product2" />
+          <h1 class="productname">summer whisper</h1>
+          <h4>250 ML</h4>
+          
+          <div class="rate">
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+          
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/perfume3.png.png" alt="product2" />
+          <h1 class="productname">hot whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+          </div>
+
+      </div>
+      
+     <div class="product2" >
+          <img src="products/img1.jpg" alt="product2" />
+          <h1 class="productname">coat whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+          
+          </div>
+          
+
+     </div>
+      <div class="product2" >
+          <img src="products/img2.jpg" alt="product2" />
+          <h1 class="productname">damn whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/img4.jpg" alt="product2" />
+          <h1 class="productname">weather whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/img4.jpg" alt="product2" />
+          <h1 class="productname">spring whisper</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+          </div>
+
+      </div>
+      
+      
+      </div>
+      
+      
+      
+      
+
+
+    
+
+
+
+   
+   
+<div id="category">
+    <h1 class="cat-head">Categories</h1>
+
+    <div class="category" >
+      <div class="cat"><a href="spring.html">
+        <img src="products/summer.png" alt="product2" />
+        <h1>Spring</h1>
+        <p>Awaken your senses with soft
+ florals and fresh new beginnings</p>
+ </a>
+      </div>
+      <div class="cat"><a href="summer.html">
+        <img src="products/spring.png" alt="product2" />
+        <h1>Summer</h1>
+        <p>Awaken your senses with soft
+ florals and fresh new beginnings</p>
+ </a>
+      </div>
+      <div class="cat"><a href="autumn.html">
+        <img src="products/autumn.png" alt="product2" />
+        <h1>Autumn</h1>
+        <p>Awaken your senses with soft
+ florals and fresh new beginnings</p>
+ </a>
+      </div>
+      <div class="cat"><a href="winter.html">
+        <img src="products/winter (2).png" alt="product2" />
+        <h1>Winter</h1>
+        <p>Awaken your senses with soft
+ florals and fresh new beginnings</p>
+ </a>
+      </div>
+      </div>
+
+
+ 
+
+<hr style="margin: 50px; ">
+
+
+
+
+    
+     <div class="footer" id="aboutus">
+      <div class = titlecontent>
+      <h3>LITLI</h3>
+      <p>Elevate your essence with Luxurios long-lasting perfumes crafted to
+        captivate hearts and awakens memories.
+
+      </p>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      </div>
+      <div class=" quick-links">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+
+
+    </div>
+    <div class="contact">
+      <h3>Help</h3>
+      <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div class="contact">
+      <h3>Contact</h3>
+      <ul>
+          <li><i class="fa-solid fa-envelope"></i><a href="#">litlipvtlmt@gmail.com</a></li>
+          <li><i class="fa-solid fa-phone"></i><a href="#">044-54261253</a></li>
+          <li><i class="fa-solid fa-location-dot"></i><a href="#">2nd ganapathy nagar street</a></li>
+          
+        </ul>
+    </div>
+      </div>
+      <div class="footer-mobile" style="text-align: center;">
+      <p> &copy; 2025 Perfume Shop. All rights reserved.</p>
+
+      </div>
+      <hr style="margin: 50px; ">
+      
+    <script src="e-commerce.js"></script>
+  </body>
+</html>
