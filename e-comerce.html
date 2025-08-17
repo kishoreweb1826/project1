@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LITLI</title>
+
+
     <link rel="stylesheet" href="e-comerce.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,7 +46,7 @@
       
       <div class="icons" >
         <i class="fa-solid fa-bars" style="padding: 30px;" onclick="show()"></i>
-        <h1 onclick="showcart() "><a><i class="fa-solid fa-cart-shopping"></i><span>0</span></a></h1>
+        <p class="shopping-icon" onclick="showcart() "><i class="fa-solid fa-cart-shopping" id="cat-icon"></i><span>0</span></p>
       </div>
     </div>
 
@@ -101,7 +104,7 @@
     <div class="popproducts2" id="products-container">
      <div class="product2" >
           <img src="products/perfume.png.png" alt="product2" />
-          <h1 class="productname">Ethereal whisper</h1>
+          <h1 class="productname">Florenza</h1>
           <h4>250 ML</h4>
           <div class="rate">
           <h2 class="productprice">$450</h2>
@@ -113,7 +116,7 @@
      </div>
       <div class="product2" >
           <img src="products/perfume1.png.png" alt="product2" />
-          <h1 class="productname">winter whisper</h1>
+          <h1 class="productname">Ocealis</h1>
           <h4>250 ML</h4>
           <div class="rate">
          <h2 class="productprice">$450</h2>
@@ -125,7 +128,7 @@
       </div>
       <div class="product2" >
           <img src="products/perfume2.png.png" alt="product2" />
-          <h1 class="productname">summer whisper</h1>
+          <h1 class="productname">Crystelle</h1>
           <h4>250 ML</h4>
           
           <div class="rate">
@@ -138,7 +141,7 @@
       </div>
       <div class="product2" >
           <img src="products/perfume3.png.png" alt="product2" />
-          <h1 class="productname">hot whisper</h1>
+          <h1 class="productname">Emberra</h1>
           <h4>250 ML</h4>
           <div class="rate">
           <h2 class="productprice">$450</h2>
@@ -149,8 +152,8 @@
       </div>
       
      <div class="product2" >
-          <img src="products/img1.jpg" alt="product2" />
-          <h1 class="productname">coat whisper</h1>
+          <img src="products/spring (6).png" alt="product2" />
+          <h1 class="productname">Vinterra</h1>
           <h4>250 ML</h4>
           <div class="rate">
           <h2 class="productprice">$450</h2>
@@ -162,8 +165,8 @@
 
      </div>
       <div class="product2" >
-          <img src="products/img2.jpg" alt="product2" />
-          <h1 class="productname">damn whisper</h1>
+          <img src="products/spring (4).png" alt="product2" />
+          <h1 class="productname">Mystara</h1>
           <h4>250 ML</h4>
           <div class="rate">
           <h2 class="productprice">$450</h2>
@@ -173,8 +176,8 @@
 
       </div>
       <div class="product2" >
-          <img src="products/img4.jpg" alt="product2" />
-          <h1 class="productname">weather whisper</h1>
+          <img src="products/summer (1).png" alt="product2" />
+          <h1 class="productname">Mystara</h1>
           <h4>250 ML</h4>
           <div class="rate">
           <h2 class="productprice">$450</h2>
@@ -184,8 +187,8 @@
 
       </div>
       <div class="product2" >
-          <img src="products/img4.jpg" alt="product2" />
-          <h1 class="productname">spring whisper</h1>
+          <img src="products/spring (2).png" alt="product2" />
+          <h1 class="productname">Ambora</h1>
           <h4>250 ML</h4>
           <div class="rate">
           <h2 class="productprice">$450</h2>
@@ -329,8 +332,9 @@
 <div id="category">
     <h1 class="cat-head">Categories</h1>
 
-    <div class="category" ><a href="spring.html">
+    <div class="category" >
       <div class="cat">
+        <a href="spring.html"></a>
         <img src="products/summer.png" alt="product2" />
         <h1>Spring</h1>
         <p>Awaken your senses with soft
