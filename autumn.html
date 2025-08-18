@@ -31,9 +31,7 @@
   <body>
      <!-- style tag -->
     <style>
-        .head{
-          
-        }
+
         .searchbar{
           display: flex;
           justify-content: center;
@@ -69,13 +67,13 @@
         <li><a href="#contactus">Contact Us</a></li>
         <li><a href="#aboutus">About us </a></li>
         
-        <li onclick="showcart() "><a><i class="fa-solid fa-cart-shopping"></i><span  class="span">0</span></a></li>
+        <li onclick="showcart() " class="menu-icon"><a><i class="fa-solid fa-cart-shopping"></i><span  class="span">0</span></a></li>
         
       </ul>
       
       <div class="icons" >
         <i class="fa-solid fa-bars" style="padding: 30px;" onclick="show()"></i>
-        <h1 onclick="showcart() "><a><i class="fa-solid fa-cart-shopping"></i><span>0</span></a></h1>
+        <p onclick="showcart() "><a><i class="fa-solid fa-cart-shopping"></i><span class="span">0</span></a></p>
       </div>
     </div>
 
@@ -120,8 +118,8 @@
     
     <div class="popproducts2" id="products-container">
      <div class="product2" >
-          <img src="products/perfume.png.png" alt="product2" />
-          <h1 class="productname">Ethereal whisper</h1>
+          <img src="products/autumn-1.png" alt="product2" />
+          <h1 class="productname">Aurona</h1>
           <h4>250 ML</h4>
           <div class="rate">
           <h2 class="productprice">$450</h2>
@@ -132,8 +130,8 @@
 
      </div>
       <div class="product2" >
-          <img src="products/perfume1.png.png" alt="product2" />
-          <h1 class="productname">winter whisper</h1>
+          <img src="products/autumn per (2).png" alt="product2" />
+          <h1 class="productname">Terrava</h1>
           <h4>250 ML</h4>
           <div class="rate">
          <h2 class="productprice">$450</h2>
@@ -144,8 +142,8 @@
 
       </div>
       <div class="product2" >
-          <img src="products/perfume2.png.png" alt="product2" />
-          <h1 class="productname">summer whisper</h1>
+          <img src="products/autumn per (1).png" alt="product2" />
+          <h1 class="productname">Duskira</h1>
           <h4>250 ML</h4>
           
           <div class="rate">
@@ -157,8 +155,8 @@
 
       </div>
       <div class="product2" >
-          <img src="products/perfume3.png.png" alt="product2" />
-          <h1 class="productname">hot whisper</h1>
+          <img src="products/autumn per (3).png" alt="product2" />
+          <h1 class="productname">Solvane</h1>
           <h4>250 ML</h4>
           <div class="rate">
           <h2 class="productprice">$450</h2>
@@ -169,8 +167,8 @@
       </div>
       
      <div class="product2" >
-          <img src="products/img1.jpg" alt="product2" />
-          <h1 class="productname">coat whisper</h1>
+          <img src="products/autumn per (4).png" alt="product2" />
+          <h1 class="productname">Emberra</h1>
           <h4>250 ML</h4>
           <div class="rate">
           <h2 class="productprice">$450</h2>
@@ -182,8 +180,8 @@
 
      </div>
       <div class="product2" >
-          <img src="products/img2.jpg" alt="product2" />
-          <h1 class="productname">damn whisper</h1>
+          <img src="products/autumn per (5).png" alt="product2" />
+          <h1 class="productname">Maphera</h1>
           <h4>250 ML</h4>
           <div class="rate">
           <h2 class="productprice">$450</h2>
@@ -193,8 +191,8 @@
 
       </div>
       <div class="product2" >
-          <img src="products/img4.jpg" alt="product2" />
-          <h1 class="productname">weather whisper</h1>
+          <img src="products/autumn per (6).png" alt="product2" />
+          <h1 class="productname">Harvestiar</h1>
           <h4>250 ML</h4>
           <div class="rate">
           <h2 class="productprice">$450</h2>
@@ -204,8 +202,8 @@
 
       </div>
       <div class="product2" >
-          <img src="products/img4.jpg" alt="product2" />
-          <h1 class="productname">spring whisper</h1>
+          <img src="products/autumn per (7).png" alt="product2" />
+          <h1 class="productname">Cinnora</h1>
           <h4>250 ML</h4>
           <div class="rate">
           <h2 class="productprice">$450</h2>
@@ -214,7 +212,28 @@
           </div>
 
       </div>
-      
+      <div class="product2" >
+          <img src="products/autumn per (9).png" alt="product2" />
+          <h1 class="productname">Ambora</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+          </div>
+
+      </div>
+      <div class="product2" >
+          <img src="products/autumn per (8).png" alt="product2" />
+          <h1 class="productname">Rusticca</h1>
+          <h4>250 ML</h4>
+          <div class="rate">
+          <h2 class="productprice">$450</h2>
+          <h3 class="mrp">$990</h3>
+          <button class="btn" onclick="addproduct(this)">Add+</button>
+          </div>
+
+      </div>
       
       </div>
       
@@ -233,29 +252,30 @@
     <h1 class="cat-head">Categories</h1>
 
     <div class="category" >
-      <div class="cat"><a href="spring.html">
-        <img src="products/summer.png" alt="product2" />
+      <div class="cat">
+        <a href="spring.html">
+        <img src="products/perfumes (4).png" alt="product2" />
         <h1>Spring</h1>
         <p>Awaken your senses with soft
  florals and fresh new beginnings</p>
  </a>
       </div>
       <div class="cat"><a href="summer.html">
-        <img src="products/spring.png" alt="product2" />
+        <img src="products/summer (8).png" alt="product2" />
         <h1>Summer</h1>
         <p>Awaken your senses with soft
  florals and fresh new beginnings</p>
  </a>
       </div>
       <div class="cat"><a href="autumn.html">
-        <img src="products/autumn.png" alt="product2" />
+        <img src="products/autumn per (7).png" alt="product2" />
         <h1>Autumn</h1>
         <p>Awaken your senses with soft
  florals and fresh new beginnings</p>
  </a>
       </div>
       <div class="cat"><a href="winter.html">
-        <img src="products/winter (2).png" alt="product2" />
+        <img src="products/perfumes (2).png" alt="product2" />
         <h1>Winter</h1>
         <p>Awaken your senses with soft
  florals and fresh new beginnings</p>
@@ -264,9 +284,12 @@
       </div>
 
 
+      </div>
+
+
  
 
-<hr style="margin: 50px; ">
+
 
 
 
@@ -289,15 +312,15 @@
       <div class=" quick-links">
         <h3>Quick links</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="e-comerce.html">Home</a></li>
+        <li><a href="#category">Category</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
+        <li><a href="#aboutus">About us </a></li>
         </ul>
 
 
     </div>
-    <div class="contact">
+    <div class="terms">
       <h3>Help</h3>
       <ul>
           <li><a href="#">Contact us</a></li>
@@ -306,7 +329,7 @@
           <li><a href="#">Privacy Policy</a></li>
         </ul>
     </div>
-    <div class="contact">
+    <div class="contact-us">
       <h3>Contact</h3>
       <ul>
           <li><i class="fa-solid fa-envelope"></i><a href="#">litlipvtlmt@gmail.com</a></li>
@@ -316,11 +339,10 @@
         </ul>
     </div>
       </div>
-      <div class="footer-mobile" style="text-align: center;">
+      <div class="footer-mobile" style="text-align: center; background-color: #EA8AE9;">
       <p> &copy; 2025 Perfume Shop. All rights reserved.</p>
 
       </div>
-      <hr style="margin: 50px; ">
       
     <script src="e-commerce.js"></script>
   </body>
