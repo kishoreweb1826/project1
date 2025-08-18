@@ -1047,11 +1047,17 @@ a{
         font-style: normal;
         padding: 10px;
     }
-    .product2:hover , .cat:hover {
+    .product2:hover , .cat:hover  {
     cursor: pointer;
     transform:none; 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
+}
+.product2 .btn:hover{
+    cursor: pointer;
+    background-color: #EA8AE9;
+    color: #000000;
+    
 }
 .popproducts2 {
     display: grid;
