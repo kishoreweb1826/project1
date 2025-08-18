@@ -94,7 +94,7 @@ body::-webkit-scrollbar {
 
 .addcartside {
     display: grid;
-    grid-template-columns: 30% 40% 30% ;
+    grid-template-columns: 30% 35% 35% ;
     align-items: center;
     margin-top: 20px;
     text-align: center;
@@ -120,8 +120,8 @@ body::-webkit-scrollbar {
 
 
 .addcartside .adjust {
-    width: 60%;
-    height: 40%;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
     border-style: none;
     
@@ -140,7 +140,7 @@ body::-webkit-scrollbar {
 .addcartside span {
     background-color: #000000;
     color: white;
-    padding: 13%;
+    padding: max(0.1rem,9%);
     border-radius: 50%;
     cursor: pointer;
     font-weight: 400;
@@ -149,9 +149,20 @@ body::-webkit-scrollbar {
 .addcartside span:nth-child(2) {
     background-color: #ffffff;
     color: black;
-    padding: 7%;
     border-radius: 50%;
     cursor: text;
+    padding: max(0.1rem,3%);
+    font-size: clamp(0.1rem, 5vw, 1rem);
+
+}
+.addcartside h1 {
+    font-size: clamp(0.1rem, 2vw, 3rem);
+    
+
+}
+.addcartside h3 {
+    font-size: clamp(0.9rem, 2vw, 2rem);
+    
 
 }
 
@@ -228,7 +239,10 @@ a{
     text-decoration: none;
     color: #000000;
 }
-
+.side-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
 
 
 .nav ul li:hover {
@@ -258,14 +272,13 @@ a{
 }
 
 .para {
-    font-size: 30px;
-
+    font-size: clamp(0.1rem, 5vw, 2rem);
     display: flex;
     gap: 20px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    padding: 50px;
+    padding: min(5rem,4%);
     /* width: 600px; */
     /* margin-left: 440px;
     margin-right: 440px; */
@@ -274,7 +287,9 @@ a{
 
 .text {
     text-align: center;
-    width: 1000px;
+    max-width: 1000px;
+
+    height: auto;
 }
 
 
@@ -329,18 +344,21 @@ a{
 
 .popproducts2 {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+    grid-template-columns: repeat(auto-fill, minmax(230px, 3fr));
     gap: 6rem;
+
+    
     /* justify-content: space-around; */
-    padding: 50px;
+    padding: 60px;
 
 
 }
 
 .product2 {
     background: #fff;
-      padding: 2rem;
+    padding: 0.5rem;
     border-radius: 8px;
+    overflow-x: auto;  
     /* width: 18%;
     height: auto;
     margin-right: 5%;
@@ -348,6 +366,7 @@ a{
     border-radius: 10px;
     text-align: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     scroll-behavior: smooth; /* smooth scroll effect */
 
 }
 @media (max-width: 600px) {
@@ -366,33 +385,33 @@ a{
 }
 
 .product2 img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 15px;
     margin-top: 10px;
     
 }
 .product2  h4{
-    font-size: 90%;
+    font-size:8 0%;
     color: #7a7777;
     
 }
 .product2 h1 {
-    font-size: clamp(0.9rem, 2vw, 2rem);
+    font-size: clamp(1.7rem, 2vw, 2rem);
     color: #000000;
     
 }
 .product2 h2{
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(1.5rem, 2vw, 1.2rem);
     color: #000000;
     
 }
 
 .product2 .btn {
     text-align: center;
-    font-size: clamp(0.2rem, 2vw, 1rem);
+    font-size: clamp(1rem, 2vw, 1rem);
     background-color: #EA8AE9;
-    padding: 4%;
+    padding: max(0.5rem,3%);
     /* margin: 15px; */
     border-radius: 20px;
     font-family: "Poppins", sans-serif;
@@ -401,7 +420,7 @@ a{
     transition: ease 0.3s;
 }
 .rate .mrp{
-    font-size: 90%;
+    font-size: clamp(1rem, 2vw, 1rem);
     text-decoration: line-through;
     color: #6d6a6a;
 }
@@ -495,7 +514,7 @@ a{
 
 .cat-head {
     text-align: center;
-    font-size: 50px;
+    font-size: clamp(1.7rem, 5vw, 3.5rem);
     font-family: "Poppins", sans-serif;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -504,7 +523,7 @@ a{
 .category {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 9.5rem;
+    gap: 3.5rem;
     padding: 3rem;
 }
 
@@ -532,6 +551,7 @@ a{
 }
 .cat h1 {
     font-family: "Poppins", sans-serif;
+     font-size: clamp(1.2rem, 2vw, 2rem);
     
     /* font-size: 100%; */
     
@@ -574,11 +594,12 @@ a{
 .footer {
     
     color: #000000;
+    background-color: #EA8AE9;
     text-align: center;
-    padding: 20px;
+    padding: max(0.5rem,4%);
     bottom: 0;
     width: 100%;
-
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
@@ -652,20 +673,40 @@ a{
     padding: 20px;
 
 }
+.contact-us {
 
-.contact h3 {
+    padding: 20px;
+
+}
+.contact-us h3 {
+    /* font-size: 35px; */
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contact-us ul {
+    list-style: none;
+    padding: 0;
+}
+.contact-us ul li {
+    margin-bottom: 10px;
+
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+}
+.terms h3 {
     /* font-size: 35px; */
     font-family: "Poppins", sans-serif;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.contact ul {
+.terms ul {
     list-style: none;
     padding: 0;
 }
 
-.contact ul li {
+.terms ul li {
     margin-bottom: 10px;
 
     font-family: "Poppins", sans-serif;
@@ -690,12 +731,12 @@ a{
 }
 
 .reach-out-bar {
-    width: 30%;
-    height: 450px;
+    max-width: 600px;
+    height: auto;
     background-color: black;
     color: white;
     display: inline-block;
-    padding: 20px;
+    padding: max(0.5rem,4%);
     border-radius: 5px;
     font-family: "Poppins", sans-serif;
 }
@@ -715,7 +756,7 @@ a{
 .reach-out-bar #one,
 #two {
     width: 42%;
-    height: 50px;
+    height: 35px;
     text-align: center;
     border-style: none;
     border-radius: 5px;
@@ -787,7 +828,8 @@ a{
        
     }
     
-    .nav ul {
+    .nav ul li{
+
         display:none;
     }
 
@@ -804,11 +846,11 @@ a{
         height: 100px;
     }
 
-    .para {
+    /* .para {
         font-size: 20px;
         margin-left: 20px;
         margin-right: 20px;
-    }
+    } */
 
     /* .head {
         font-size: 20px;
@@ -879,13 +921,12 @@ a{
     width: 20%;
     height: 50%;
     /* margin: 10%; */
-} */
 
 
     .footer {
         flex-direction: column;
     }
-    .reach-out-bar .login-content {
+    /* .reach-out-bar .login-content {
     font-size: 15px;
     }
     .reach-out-bar {
@@ -896,18 +937,37 @@ a{
     display: inline-block;
     padding: 20px;
     border-radius: 5px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif; 
+}
+    */
 }
 
 
 
 
-@media screen and (max-width: 748px) {
-    .para {
-        font-size: 15px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+
+
+@media screen and (max-width: 788px) {
+        
+    .add-to-cart-side-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: white;
+    color: black;
+    width: 70%;
+    height: 100%;
+    padding: 1%;
+     z-index: 6;
+    transition: ease 0.5s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+
+}/* .para {
+            font-size: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+        } */
 
     /* .heading {
         font-size: 50px;
@@ -956,6 +1016,15 @@ a{
     /* .footer-mobile{
         display: block;
     } */
+     .cat img{
+    display: none;
+ }
+ .category{
+    gap: 1.5rem;
+ }
+ .cat-head {
+    margin-bottom: 10px;
+ }
 
 
 
@@ -976,6 +1045,12 @@ a{
         font-style: normal;
         padding: 10px;
     }
+    .product2:hover , .cat:hover {
+    cursor: pointer;
+    transform:none; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
 
     /* .product2 h1 {
         font-family: "Poppins", sans-serif;
@@ -1006,7 +1081,7 @@ a{
         width: 90%;
         height: 100px;
     } */
-    .reach-out-bar {
+    /* .reach-out-bar {
     width: 70%;
     height: 450px;
     background-color: black;
@@ -1015,6 +1090,15 @@ a{
     padding: 20px;
     border-radius: 5px;
     font-family: "Poppins", sans-serif;
-}
+} */
+ .cat img{
+    display: none;
+ }
+ .category{
+    gap: 1.5rem;
+ }
+ .cat-head {
+    margin-bottom: 10px;
+ }
 
 }
