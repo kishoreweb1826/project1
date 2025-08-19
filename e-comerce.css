@@ -65,7 +65,7 @@ body::-webkit-scrollbar {
     width: 40%;
     height: 100%;
     padding: 1%;
-     z-index: 11;
+    z-index: 11;
     transition: ease 0.5s;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     
@@ -820,11 +820,11 @@ a{
 }
 .cart-bar i{
     position: relative;
-    font-size: clamp(0.1rem, 5vw, 1.7rem);
+    font-size: clamp(0.1rem, 5vw, 2.5rem);
 }
 .cart-bar span{
     color: white;
-    font-size: clamp(0.1rem, 5vw, 0.9rem);
+    font-size: clamp(0.1rem, 2vw, 0.9rem);
     border-radius: 50%;
     position: absolute;
     top: 44%;
@@ -1159,5 +1159,17 @@ a{
  .cat-head {
     margin-bottom: 10px;
  }
+ .cart-bar{
+    margin: 5%;
+    z-index: 10;
+ }
+ .add-to-cart-side-nav {
+    
+    z-index: 11;
+    
+    
+
+}
+
 
 }
