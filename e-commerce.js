@@ -51,9 +51,11 @@ function addproduct(button) {
 
   if (existingProduct) {
     // Increase quantity for the same product
+    
     let qtySpan = existingProduct.querySelector(".quantity");
     qtySpan.textContent = parseInt(qtySpan.textContent) + 1;
     return;
+    
   }
 
   // Create new cart item div for different products
@@ -73,6 +75,9 @@ function addproduct(button) {
             <span class="increase" onclick="increase(this)">></span>
         </div>
     `;
+    let sound = document.getElementById("clickSound");
+      sound.currentTime = 0; // restart sound if button is clicked quickly
+      sound.play();
 
   cartitems.appendChild(product);
   spanvalue++;
